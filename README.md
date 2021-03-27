@@ -4,6 +4,7 @@
 
 ### BASIC REQUIREMENT
   - Any Operating System with [Python](https://www.python.org/downloads/) latest version.
+  - Anaconda3 
 
 ### PACKAGES USED
   1. pyttsx3 - text to speech library
