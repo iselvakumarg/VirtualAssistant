@@ -7,3 +7,4 @@
 
 ### PACKAGES USED
   1. pyttsx3 - text to speech library
+  2. datetime - used to get the current date and time
