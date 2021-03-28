@@ -14,8 +14,9 @@
   3. SpeechRecognition - library for performing speech recognition through online and offline
   4. pyaudio - provides Python bindings for PortAudio, the cross-platform audio I/O library
   
-  downloading this package might get some errors, If you face issues try :-
-  
-  ```pip install pipwin```
-  
-  ```pipwin install pyaudio```
+      downloading this package might get some errors through pypi website, If you face issues try :-
+      
+      ```pip install pipwin```
+      
+      ```pipwin install pyaudio```
+      
