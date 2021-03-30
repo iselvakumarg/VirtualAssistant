@@ -1,6 +1,8 @@
 import pyttsx3
 import datetime
 import speech_recognition as sr
+import wikipedia 
+import smtplib
 
 #Text to Speech intialization
 
@@ -55,10 +57,10 @@ def wishMe():
     speak("It's Friday at your Service! Please tell me how can I help you today ?")
 
 def listenToCommand():
-    r = sr.Recognizer()
+    r = sr.Recognizer() #used to recognize the voice
     with sr.Microphone() as source:
         print("Listening......")
-        r.pause_threshold = 1
+        r.pause_threshold = 1 #represents the minimum length of silence (in seconds) that will register as the end of a phrase
         audio = r.listen(source)
         
     try:
@@ -68,8 +70,40 @@ def listenToCommand():
         
     except Exception as e:
         print(e)
-        print("Say that again please....")
+        speak("Say that again please....")
         return "None"
     return query
 
-listenToCommand()
+if __name__ == '__main__':
+    
+    #wishMe() UNCOMMENT IT AT THE END
+    
+    while True:
+        
+        query = listenToCommand().lower() #all query will be stored in lower for better recognition
+        
+        if 'time' in query:
+            getTime()
+            
+        elif 'date' in query:
+            getDate()
+            
+        elif 'wikipedia' in query:
+            speak("Searching...")
+            query = query.replace("wikipedia", " ")
+            result = wikipedia.summary(query, sentences = 3)
+            speak("According to wikipedia")
+            print(result)
+            speak(result)
+            
+
+
+
+
+
+
+
+
+
+
+        
