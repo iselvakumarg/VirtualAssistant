@@ -23,6 +23,28 @@
       
   6. smtplib - defines an SMTP client session object that can be used to send mail to any internet machine with an SMTP or ESMTP listner daemon.
   
+   7. [psutil](https://pypi.org/project/psutil/) - cross-platform lib for process and system monitering in Python.
+  
+  8. [pyjokes](https://pypi.org/project/pyjokes/) - a basic joke library for python
+  
+  9. [pyautogui](https://pypi.org/project/PyAutoGUI/) - This package will let python to control the mouse and keyboard and other GUI automation tasks.
+
+  10. [wolframalpha](https://pypi.org/project/wolframalpha/) - News api
+  
+  11. time - manage time 
+
+  12. os - to interact with the OS
+
+### Instruction for .EXE conversion 
+---
+
+To convert the .py file to an .exe file first download the [pyinstaller](https://pypi.org/project/pyinstaller/) package.
+
+``` pyinstaller --onefile 'friday.py' ```
+
+This will take around 3 - 5 minutes to convert the file to exe and which can use as a private cli to use the virtual assistant in the system locally.
+
+
   
   
   
